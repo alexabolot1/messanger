@@ -5,6 +5,7 @@
 """
 
 import locale
+from chardet import detect
 
 resurs_string = ['сетевое программирование', 'сокет', 'декоратор']
 
@@ -12,8 +13,12 @@ with open('resurs.txt', 'w+') as f:
     for i in resurs_string:
         f.write(i + '\n')
 
-file_coding = locale.getpreferredencoding()
+with open('resurs.txt', 'rb') as f:
+    content = f.read()
+file_coding = detect(content)['encoding']
+print(file_coding)
+
 
 with open('resurs.txt', 'r', encoding=file_coding) as f:
-    for file_string in f.readlines():
-        print(file_string)
+    content = f.read()
+print(content)
