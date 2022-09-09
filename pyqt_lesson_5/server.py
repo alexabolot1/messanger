@@ -6,7 +6,7 @@ import configparser   # https://docs.python.org/3/library/configparser.html
 from common.variables import *
 from common.utils import *
 from decos import log
-from descryptors import Port
+from descrptrs import Port
 from metaclasses import ServerMaker
 from server_database import ServerStorage
 from PyQt5.QtWidgets import QApplication, QMessageBox
