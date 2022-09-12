@@ -4,3 +4,17 @@
 2022-09-12 17:55:33,745 DEBUG server.py Инициализация парсера аргументов коммандной строки: ['/home/alex/messanger/pyqt_lesson_6/server.py']
 2022-09-12 17:55:33,746 DEBUG server.py Аргументы успешно загружены.
 2022-09-12 17:55:33,810 INFO core.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2022-09-12 18:00:26,525 DEBUG decos.py Была вызвана функция main c параметрами () , {}. Вызов из модуля __main__
+2022-09-12 18:00:26,525 DEBUG decos.py Была вызвана функция config_load c параметрами () , {}. Вызов из модуля __main__
+2022-09-12 18:00:26,525 DEBUG decos.py Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__
+2022-09-12 18:00:26,525 DEBUG server.py Инициализация парсера аргументов коммандной строки: ['/home/alex/messanger/pyqt_lesson_6/server.py']
+2022-09-12 18:00:26,526 DEBUG server.py Аргументы успешно загружены.
+2022-09-12 18:00:26,587 INFO core.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+2022-09-12 18:00:39,573 INFO core.py Установлено соедение с ПК ('127.0.0.1', 47626)
+2022-09-12 18:00:39,573 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=18, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 47626), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1662987639.5737798, 'user': {'account_name': 'test1'}}) , {}. Вызов из модуля common.utils
+2022-09-12 18:00:39,574 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=18, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 47626), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-09-12 18:00:40,074 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=25, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 47626)>,) , {}. Вызов из модуля common.utils
+2022-09-12 18:00:40,074 DEBUG core.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1662987639.5737798, 'user': {'account_name': 'test1'}}
+2022-09-12 18:00:40,074 DEBUG core.py Start auth process for {'account_name': 'test1'}
+2022-09-12 18:00:40,082 DEBUG core.py Unknown username, sending {'response': 400, 'error': 'Пользователь не зарегистрирован.'}
+2022-09-12 18:00:40,083 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=25, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 47626)>, {'response': 400, 'error': 'Пользователь не зарегистрирован.'}) , {}. Вызов из модуля common.utils
