@@ -3,7 +3,7 @@ import logs.config_client_log
 import argparse
 import sys
 import os
-from Cryptodome.PublicKey import RSA
+from Crypto.PublicKey import RSA
 from PyQt5.QtWidgets import QApplication, QMessageBox
 
 from common.variables import *

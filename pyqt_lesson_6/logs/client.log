@@ -91,3 +91,5 @@ Hello, Alex!
 2022-09-12 18:27:42,960 DEBUG transport.py Установлено соединение с сервером
 2022-09-12 18:27:42,960 DEBUG transport.py Сформировано presence сообщение для пользователя test1
 2022-09-12 18:27:47,965 CRITICAL transport.py Потеряно соединение с сервером!
+2022-09-12 18:35:49,661 DEBUG client.py Args loaded
+2022-09-12 18:35:59,228 DEBUG client.py Args loaded

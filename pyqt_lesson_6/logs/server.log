@@ -39,3 +39,5 @@
 2022-09-12 18:27:42,961 DEBUG core.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1662989262.960695, 'user': {'account_name': 'test1'}}
 2022-09-12 18:27:42,961 DEBUG core.py Start auth process for {'account_name': 'test1'}
 2022-09-12 18:27:42,963 DEBUG core.py Correct username, starting passwd check.
+2022-09-12 18:35:49,659 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-09-12 18:35:59,227 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
